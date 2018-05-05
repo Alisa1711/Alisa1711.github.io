@@ -57,6 +57,7 @@ img {
 
 .subtitle {
   margin: 0;
+  margin-top: 25px;
   font-family: "Intro Script", Arial, sans-serif;
   font-size: 35px;
   line-height: 40px;
@@ -141,7 +142,6 @@ img {
 
 .promo h1 {
   margin: 0;
-  margin-bottom: 25px;
   font-family: "Playfair Display", "Times New Roman", serif;
   font-size: 78px;
   line-height: 70px;
@@ -302,11 +302,11 @@ img {
 }
 
 .individual-order .title {
-  margin-bottom: 10px;
   text-align: center;
 }
 
 .individual-order .subtitle {
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -669,7 +669,6 @@ img {
 }
 
 .about .subtitle {
-  margin-top: 25px;
   font-weight: normal;
 }
 
@@ -679,7 +678,7 @@ img {
   font-weight: bold;
 }
 
-.about p {
+.about .content {
   margin: 0;
   margin-bottom: 20px;
   font-size: 18px;
@@ -753,12 +752,8 @@ img {
   padding-bottom: 200px;
 }
 
-.our-advantages .title {
-  text-align: center;
-}
-
+.our-advantages .title,
 .our-advantages .subtitle {
-  margin-top: 30px;
   text-align: center;
 }
 
