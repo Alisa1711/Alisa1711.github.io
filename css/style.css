@@ -952,7 +952,7 @@ img {
   margin-top: 10px;
 }
 
-.contacts-form input:not([type="submit"]) {
+.contacts-form input {
   box-sizing: border-box;
   height: 60px;
   padding-top: 30px;
