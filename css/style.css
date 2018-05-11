@@ -685,59 +685,59 @@ img {
   margin-left: auto;
 }
 
-.replies {
+.reviews {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-image: url("../img/replies-bg.jpg");
+  background-image: url("../img/reviews-bg.jpg");
   background-repeat: no-repeat;
   background-position: center top;
 }
 
-.replies .slider {
+.reviews .slider {
   width: 840px;
   margin: 60px auto 0;
 }
 
-.replies-list {
+.reviews-list {
   width: 630px;
   margin: 0 auto;
   padding: 0;
   list-style: none;
 }
 
-.reply-avatar {
+.review-avatar {
   float: left;
   margin-right: 50px;
   border-radius: 50%;
 }
 
-.reply-text {
+.review-text {
   margin: 0;
   padding-right: 20px;
   font-size: 18px;
 }
 
-.reply-author {
+.review-author {
   font-size: 27px;
   font-style: normal;
   font-weight: bold;
 }
 
-.reply-author .profession-and-age {
+.review-author .profession-and-age {
   display: block;
   font-size: 20px;
   line-height: 24px;
   font-weight: normal;
 }
 
-.reply-text a {
+.review-text a {
   font-size: 16px;
   color: #f50049;
   text-decoration: underline;
   font-style: italic;
 }
 
-.replies .slider-counter {
+.reviews .slider-counter {
   color: #f50049;
 }
 
