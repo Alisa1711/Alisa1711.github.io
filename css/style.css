@@ -1,20 +1,23 @@
 @font-face {
     font-family: "Intro Script";
-    src: url("../fonts/introscriptr.woff2") format("woff2");
+    src: url("../fonts/introscriptr.woff2") format("woff2"),
+    url("../fonts/introscriptr.eot") format("embedded-opentype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
 	font-family: "Circe";
-	src: url("../fonts/circe-regular.woff2") format("woff2");
+	src: url("../fonts/circe-regular.woff2") format("woff2"),
+  url("../fonts/circe-regular.eot") format("embedded-opentype");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Circe";
-	src: url("../fonts/circe-bold.woff2") format("woff2");
+	src: url("../fonts/circe-bold.woff2") format("woff2"),
+  url("../fonts/circe-bold.eot") format("embedded-opentype");
 	font-weight: bold;
 	font-style: normal;
 }
@@ -86,6 +89,10 @@ img {
 
 .btn:hover {
   box-shadow: 0px 5px 7px 1px rgba(255, 0, 67, 0.3);
+}
+
+.btn-ie-fix {
+  position: relative;
 }
 
 .price {
@@ -233,7 +240,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-content: space-between;
   margin-top: 64px;
 }
 
@@ -388,6 +394,8 @@ img {
 }
 
 .cake-fillings-list {
+  width: 700px;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
 }
@@ -395,21 +403,21 @@ img {
 .cake-filling-item {
   display: flex;
   justify-content: space-between;
-  width: 700px;
-  margin: 0 auto;
 }
 
 .cake-filling-item .content {
+  align-self: center;
   width: 280px;
-  margin: auto;
+  padding-right: 40px;
 }
 
 .cake-filling-item h3 {
   margin: 0;
+  font-size: 20px;
   line-height: 28px;
 }
 
-.cake-filling-item p {
+.cake-filling-item .description {
   margin: 0;
   font-size: 18px;
 }
@@ -839,7 +847,7 @@ img {
   padding-bottom: 245px;
 }
 
-.customer-care .content {
+.customer-care .description {
   margin: 0;
   margin-top: 15px;
 }
@@ -954,6 +962,18 @@ img {
 }
 
 .contacts-form input::placeholder {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.contacts-form input:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.contacts-form input::-ms-input-placeholder {
   font-size: 14px;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.4);

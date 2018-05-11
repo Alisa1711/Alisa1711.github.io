@@ -6,7 +6,7 @@
   <title>Торты на заказ</title>
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,700i&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style-min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -83,9 +83,9 @@
                   <img src="img/chocolate-ganache.jpg" width="343" height="389" alt="Шоколадный ганаш">
                   <div class="content">
                     <h3>Шоколадный ганаш</h3>
-                    <p>Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
+                    <p class="description">Ароматный шоколадный бисквит, густой шоколадный крем – самый шоколадный из всех возможных десертов!</p>
                     <p class="price">1000 руб/кг</p>
-                    <button class="btn" form="individual-order-form">Выбрать</button>
+                    <button class="btn" name="cake-filling-btn" form="order-form"><span class="btn-ie-fix">Выбрать</span></button>
                   </div>
                 </li>
               </ul>
@@ -139,7 +139,7 @@
               <span class="slider-counter">2/35</span>
             </div>
             <p class="order-form-header">Ваш выбор</p>
-            <form class="order-form" method="get" name="order-form" id="order-form">
+            <form class="order-form" action="https://echo.htmlacademy.ru" method="get" name="order-form" id="order-form">
               <p class="order-item">
                 <label for="cake-filling">Начинка</label>
                 <input type="text" name="cake-filling" id="cake-filling" value="Шоколадный ганаш">
@@ -152,14 +152,15 @@
                 <label for="cake-decor">Оформление</label>
                 <input type="text" name="cake-decor" id="cake-decor" value="Маршмэллоу">
               </p>
-                <input class="btn" type="submit" value="Заказать торт">
+                <button class="btn" type="submit"><span class="btn-ie-fix">Заказать торт</span></button>
             </form>
           </li>
         </ol>
       </section>
 
-      <section class="replies wrapper" id="replies">
-        <h2 class="title text-center">Отзывы</h2>
+      <section class="replies" id="replies">
+        <div class="wrapper">
+          <h2 class="title text-center">Отзывы</h2>
           <div class="slider">
             <ul class="replies-list">
               <li class="clearfix">
@@ -177,6 +178,7 @@
             <button class="slider-btn next" type="button"><span class="hidden">Следующий отзыв</span></button>
             <span class="slider-counter">1/26</span>
           </div>
+        </div>
       </section>
 
       <section class="about wrapper" id="about">
@@ -222,7 +224,7 @@
         <section class="customer-care">
           <h3 class="title">Забота о клиентах</h3>
           <p class="subtitle">Для нас важно</p>
-          <p class="content">Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он был создан исключительно для вас и для вашего события.</p>
+          <p class="description">Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи, чтобы он был создан исключительно для вас и для вашего события.</p>
           <div class="background"></div>
         </section>
       </div>
@@ -256,11 +258,11 @@
           <div class="container">
             <div class="column">
               <p class="contacts-form-description">Заполните форму ниже и наш кондитер свяжется с Вами</p>
-              <form class="contacts-form" action="index.html" method="post">
+              <form class="contacts-form" action="https://echo.htmlacademy.ru" method="post">
                 <input type="text" name="name" placeholder="Ваше имя">
                 <input type="email" name="mail" placeholder="Email адрес">
                 <input type="text" name="question" placeholder="Ваш вопрос">
-                <input class="btn" type="submit" name="send" value="Отправить">
+                <button class="btn" type="submit"><span class="btn-ie-fix">Отправить</span></button>
               </form>
             </div>
             <div class="column">
